@@ -2,15 +2,11 @@
   section.text-center
     .image= image_tag "icon-1.png"
     span
-      | Conte-nos quem é você e o que te interessa
+      | Cadastre aqui quais talentos ou recursos não monetários você pode disponibilizar para contribuir com a Rede ou com atividades cidadãs
   section.yellow-bg.white-text.text-center
     .image= image_tag "icon-2.png"
     span
       | Receba oportunidades de ação de acordo com o seu perfil
-  section.text-center
-    .image= image_tag "icon-3.png"
-    span
-      | Ganhe reconhecimento pelo tempo e talento dedicados à cidade
 
 .row#available_tasks {data-count=@tasks_count}
   - if Task.available.empty?

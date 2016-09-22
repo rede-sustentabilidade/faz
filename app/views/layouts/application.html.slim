@@ -1,18 +1,18 @@
 doctype html
 html
   head
-    title Multitude
+    title FAZ
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = meurio_ui_assets
     = csrf_meta_tags
     = favicon_link_tag 'favicon.png'
-    meta property="og:title"        content="#{content_for?(:title)       ? yield(:title) : 'Multitude'}"
+    meta property="og:title"        content="#{content_for?(:title)       ? yield(:title) : 'FAZ'}"
     meta property="og:image"        content="#{content_for?(:image)       ? yield(:image) : image_url('multitude-facebook.jpg')}"
     meta property="og:type"         content="#{content_for?(:type)        ? yield(:type)  : 'website'}"
-    meta property="og:description"  content="#{content_for?(:description) ? yield(:description)  : 'O Multitude é o aplicativo da Rede Nossas Cidades que oferece oportunidades de ação voluntária a você, cidadão interessado em trabalhar por mobilizações que melhoram a cidade.'}"
+    meta property="og:description"  content="#{content_for?(:description) ? yield(:description)  : 'FAZ é uma plataforma colaborativa que permitirá a qualquer membro da Rede, filiado ao não, disponibilizar recursos não monetários (tempo, talentos, ferramentas etc) para contribuir com a Rede ou construir iniciativas auto-organizadas. O sentido de sua existência é sustentar o espaço do ativismo autoral e da conexão das instâncias da Rede com as suas bordas e os núcleos vivos da Sociedade.'}"
     meta property="og:url"          content=request.url
-    meta name="keywords"        content="multitude, voluntário, participação, colaboração, cidade, carioca, tarefas, conquistas, rio de Janeiro, rio, meu rio, ong meu rio, rede, rede meu rio, movimento, movimento meu rio"
-    meta name="description"     content="#{content_for?(:description) ? yield(:description)  : 'O Multitude é o aplicativo da Rede Nossas Cidades que oferece oportunidades de ação voluntária a você, cidadão interessado em trabalhar por mobilizações que melhoram a cidade.'}"
+    meta name="keywords"        content="faz, voluntário, participação, colaboração, cidade, tarefas, conquistas"
+    meta name="description"     content="#{content_for?(:description) ? yield(:description)  : 'FAZ é uma plataforma colaborativa que permitirá a qualquer membro da Rede, filiado ao não, disponibilizar recursos não monetários (tempo, talentos, ferramentas etc) para contribuir com a Rede ou construir iniciativas auto-organizadas. O sentido de sua existência é sustentar o espaço do ativismo autoral e da conexão das instâncias da Rede com as suas bordas e os núcleos vivos da Sociedade.'}"
     link rel='image_src' type='image/jpeg' href=image_url('multitude-facebook.jpg')
     = analytics_init if Rails.env.production?
   body class=[controller.controller_name, controller.action_name]
