@@ -1,6 +1,6 @@
 .row
   section.what-is-it
-    h1 O que é o Faz
+    h1 O que é o Faz?
     .image= image_tag "about-icon-1.png"
     p FAZ é uma plataforma colaborativa que permitirá a qualquer membro da Rede, filiado ao não, disponibilizar recursos não monetários (tempo, talentos, ferramentas etc) para contribuir com a Rede ou construir iniciativas auto-organizadas. O sentido de sua existência é sustentar o espaço do ativismo autoral e da conexão das instâncias da Rede com as suas bordas e os núcleos vivos da Sociedade. 
   section.how-it-works
@@ -11,4 +11,4 @@
 
   .call-to-action
     .action_button
-      = link_to "Cadastre-se Agora!", "http://accounts.#{ENV["MEURIO_DOMAIN"]}/edit_profile?redirect_url=#{root_url}", class: [:button, :radius]
+      = link_to "Participe!", sign_in_path('passaporte'), class: [:button, :radius]
