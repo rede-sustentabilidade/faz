@@ -2,11 +2,11 @@
   section.text-center
     .image= image_tag "icon-1.png"
     span
-      | Cadastre aqui quais talentos ou recursos não monetários você pode disponibilizar para contribuir com a Rede ou com atividades cidadãs
+      | Participe das atividades propostas pela Rede
   section.yellow-bg.white-text.text-center
     .image= image_tag "icon-2.png"
     span
-      | Receba oportunidades de ação de acordo com o seu perfil
+      | Veja abaixo as atividades propostas
 
 .row#available_tasks {data-count=@tasks_count}
   - if Task.available.empty?
