@@ -1,6 +1,7 @@
 class TaskSubscriptionsController < InheritedResources::Base
   load_and_authorize_resource
   belongs_to :task
+  before_filter :require_complete_profile
 
   def create
     resource.task = @task

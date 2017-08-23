@@ -5,7 +5,7 @@ ruby '2.1.2'
 gem 'rails', '4.1.5'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.18.4'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -40,6 +40,7 @@ group :development, :test do
   gem 'rspec-its'
   gem 'rspec-collection_matchers'
   gem 'dotenv-rails'
+  # gem 'nokogiri', '>= 1.6 .7'
 end
 
 gem 'foundation-rails'

@@ -1,5 +1,6 @@
 class TasksController < InheritedResources::Base
   load_and_authorize_resource
+    before_filter :require_complete_profile
 
   # TODO: the check_box helper is adding a hidden skill option with no value and it
   # is been submitted to the create and update actions. We have to figure out what's

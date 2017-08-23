@@ -29,4 +29,11 @@ class ApplicationController < ActionController::Base
       redirect_to root_url
     end
   end
+
+  def require_complete_profile
+    if current_user && (!current_user.first_name || current_user.first_name.blank?)
+      flash[:error] = "Você precisa completar seu perfil para prosseguir"
+      redirect_to edit_user_url(current_user)
+    end
+  end
 end
